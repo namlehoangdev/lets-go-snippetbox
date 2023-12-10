@@ -39,7 +39,6 @@ func main() {
 	// register the home function as the handler for the "/" URL pattern
 	mux := http.NewServeMux()
 	mux.HandleFunc("/", home)
-	mux.HandleFunc("/snippet/view", snippetCreate)
 	mux.HandleFunc("/snippet/view/", snippetView)
 	mux.HandleFunc("/snippet/create", snippetCreate)
 
